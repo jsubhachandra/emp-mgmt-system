@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  emp-mgm-system-service:
+    image: 203824/java:emp-mgm-system
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
